@@ -18,7 +18,7 @@ email_list = []
           end
     email = "#{adj}#{sep}#{noun}@#{domain}"
     email_list << email
-    if rand < 0.05
+    if rand < 0.03
       ndups = rand(1..30)
       ndups.times do
         email = adj + "."*rand(0..15) + noun + "+" + nouns.sample + "@" + domain
